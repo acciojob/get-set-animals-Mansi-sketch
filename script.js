@@ -22,9 +22,6 @@ class Dog extends Animal {
 		rerurn ("purr");
 	}
 
-	makeSoundToAnimal(){
-		return super.makeSound;
-	}
 }
 
 class Cat extends Animal {
@@ -36,9 +33,6 @@ class Cat extends Animal {
 		return ("woof");
 	}
 
-	makeSoundToAnimal2(){
-		return super.makeSound;
-	}
 }
 
 // Do not change the code below this line
