@@ -1,47 +1,40 @@
 //complete this code
 class Animal {
-	species: string;
+	private _species: string;
 
-	constructor(species: string){
-		this.species = species;
+	constructor(species: string) {
+		this._species = species;
 	}
 
-	get SpeciesOfAnimal(){
-		return this.species;
+	get species(): string {
+		return this._species;
 	}
 
-	makeSound(){
-		return `The ${this.species} makes a sound`;
-	}
-}
-
-class Dog extends Animal {
-	constructor(species: string){
-		super(species);
-	}
-
-	bark(){
-		return "woof";
-	}
-
-	makeSoundToAnimal(){
-		return super.makeSound();
+	makeSound(): void {
+		console.log(`The ${this._species} makes a sound`);
 	}
 }
 
 class Cat extends Animal {
-	constructor(species: string){
+	constructor(species: string) {
 		super(species);
 	}
 
-	purr(){
-		return "purr";
-	}
-
-	makeSoundToAnimal2(){
-		return super.makeSound();
+	purr(): void {
+		console.log("purr");
 	}
 }
+
+class Dog extends Animal {
+	constructor(species: string) {
+		super(species);
+	}
+
+	bark(): void {
+		console.log("woof");
+	}
+}
+
 
 
 // Do not change the code below this line
