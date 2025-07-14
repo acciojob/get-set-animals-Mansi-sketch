@@ -1,12 +1,12 @@
 //complete this code
 class Animal {
-
+	private _species: string;
 	constructor(species: string) {
-		this.species = species;
+		this._species = species;
 	}
 
 	get species(): string {
-		return this.species;
+		return this._species;
 	}
 
 	makeSound(): void {
@@ -19,7 +19,7 @@ class Cat extends Animal {
 		super(species);
 	}
 	makeSound(){
-		return super.makeSound();
+		 super.makeSound();
 	}
 
 	purr(): void {
@@ -32,7 +32,7 @@ class Dog extends Animal {
 		super(species);
 	}
 	makeSound(){
-		return super.makeSound();
+		 super.makeSound();
 	}
 	bark(): void {
 		console.log("woof");
